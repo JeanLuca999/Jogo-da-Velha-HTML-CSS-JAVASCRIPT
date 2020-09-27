@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <article id="container">
+        <div id="l1c1" class="campo" onclick="clicou('l1c1')"></div>
+        <div id="l1c2" class="campo" onclick="clicou('l1c2')"></div>
+        <div id="l1c3" class="campo" onclick="clicou('l1c3')"></div>
+
+
+        <div id="l2c1" class="campo" onclick="clicou('l2c1')"></div>
+        <div id="l2c2" class="campo" onclick="clicou('l2c2')"></div>
+        <div id="l2c3" class="campo" onclick="clicou('l2c3')"></div>
+
+        <div id="l3c1" class="campo" onclick="clicou('l3c1')"></div>
+        <div id="l3c2" class="campo" onclick="clicou('l3c2')"></div>
+        <div id="l3c3" class="campo" onclick="clicou('l3c3')"></div>
+
+        <section id="resultado">
+            <p id="jogador1">X - Jogador 1: 0</p>
+            <p id="jogador2">O - Jogador 2: 0</p>
+            <p id="empate">Empate(s): 0</p>
+        </section>
+        <input class="botao" onclick="resetarCampos()" type="button" value="Resetar Campos">
+        <input class="botao" onclick="resetarPontos()" type="button" value="Resetar Jogo">
+    </article>
+    <script src="js/script.js"></script>
+</body>
+</html>
